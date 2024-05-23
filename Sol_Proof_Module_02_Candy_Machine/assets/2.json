@@ -1,0 +1,20 @@
+{
+    "name": "Car_NFT",
+    "symbol": "BBW",
+    "description": "A car is a four-wheeled vehicle for personal transportation, offering convenience, comfort, and mobility for individuals.",
+    "image": "2.png",
+    "attributes": [
+      {
+        "trait_type": "Art",
+        "value": "2"
+      }
+    ],
+    "properties": {
+      "files": [
+        {
+          "uri": "2.jpg",
+          "type": "image/jpg"
+        }
+      ]
+    }
+}

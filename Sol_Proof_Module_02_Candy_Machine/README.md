@@ -231,3 +231,20 @@ Mint a specified amount of tokens to the fromWallet's token account. Minting is 
 **Transfer Tokens**
 
 Transfer a specified amount of tokens from the fromWallet's token account to the toWallet's token account. This demonstrates the transfer functionality of SPL tokens.
+
+## Candy Machine 
+
+A Candy Machine is a decentralized protocol built on the Solana blockchain that facilitates the fair and transparent distribution of NFTs (Non-Fungible Tokens). It is primarily used for minting NFT collections and ensuring that the process is automated, fair, and secure. The Candy Machine protocol is developed by Metaplex, an open-source project providing tools for creating, minting, and managing NFTs on Solana.
+
+## Command Guide
+```
+ - solana-keygen new --outfile ~/.config/solana/devnet.json: Generate a new Solana wallet.
+ - solana airdrop 2 $(solana-keygen pubkey): Fund the new wallet with 2 SOL.
+ - solana config set --keypair ~/.config/solana/devnet.json: Set the generated keypair as the default for Solana CLI commands.
+ - ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts validate_assets assets/: Validate NFT asset files in the
+ - sugar upload: This command uploads NFT assets to Arweave with the specified Candy Machine configuration. It is used to add NFTs to the Candy Machine for distribution.
+ - sugar deploy: This command deploys the Candy Machine to the Solana blockchain, making it operational for minting and distributing NFTs. It ensures that the Candy Machine is deployed with the specified configuration and settings.
+ - sugar verify: This command verifies the uploaded NFT assets and Candy Machine deployment. It ensures that the NFT assets are correctly uploaded to Arweave and linked with the Candy Machine. Additionally, it verifies that the Candy Machine is correctly deployed on the Solana blockchain and ready for use.
+```
+
+
